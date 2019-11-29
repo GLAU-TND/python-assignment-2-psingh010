@@ -1,17 +1,7 @@
-l = list(map(int,input().split(',')))
-k = int(input())
+a='34,67,55,33,12,98'
+print(list(a.split(',')))
+print(tuple(a.split(',')))
 
-
-def contiguoussum(l1, k1):
-    for i in range(len(l1)):
-        s=0
-        for j in range(i,len(l1)):
-            s = s+l1[j]
-            if s == k1:
-                return l1[i:j+1]
-    return None
-
-
-print(contiguoussum(l, k))
-
-
+b=sorted('without,hello,bag,world'.split(','))
+for i in  b:
+    print(i,end=',')
